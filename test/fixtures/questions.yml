@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user: 
+  channel: 
+  title: MyString
+  body: MyText
+  likes_count: 1
+
+two:
+  user: 
+  channel: 
+  title: MyString
+  body: MyText
+  likes_count: 1

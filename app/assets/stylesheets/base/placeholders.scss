@@ -1,0 +1,15 @@
+%hover-translateY {
+  @include prefix(transition, all 0.25s ease-in-out 0s);
+  @include prefix(transform, translateY(0px));
+  &:hover {
+    @include prefix(transform, translateY(-3px));
+  }
+}
+
+%inline-block {
+  @include inline-block;
+}
+
+%inline-block-parent {
+  @include inline-block-parent;
+}

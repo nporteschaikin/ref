@@ -1,0 +1,36 @@
+@mixin prefix($attribute, $value) {
+  -moz-#{$attribute}: $value;
+  -webkit-#{$attribute}: $value;
+  -o-#{$attribute}: $value;
+  -ms-#{$attribute}: $value;
+  #{$attribute}: $value;
+}
+
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+  @-ms-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin inline-block {
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+
+@mixin inline-block-parent {
+  font-size: 0;
+  line-height: 0;
+}
