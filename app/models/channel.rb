@@ -7,7 +7,7 @@ class Channel < ActiveRecord::Base
   belongs_to  :user
   has_many    :questions
 
-  validates :name, presence: true
+  validates :name, presence: true, uniqueness: { case_sensitive: false }
   validates :title, length: { minimum: 5, maximum: 50 }
   validates :description, length: { minumum: 5, maximum: 140 }
 

@@ -33,7 +33,7 @@ module SessionsHelper
   def signed_in
     unless signed_in?
       store_location
-      redirect_to(sign_in_path), notice: "Please sign in."
+      redirect_to(sign_in_path, notice: "Please sign in.")
     end
   end
   
